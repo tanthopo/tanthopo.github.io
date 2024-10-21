@@ -1,1 +1,144 @@
-<h1> Hello World </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Trip to London</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2c3e50; /* Dark background */
+            color: #ecf0f1; /* Light text color */
+        }
+        header {
+            background-color: #34495e; /* Darker shade for header */
+            color: #ecf0f1;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header h2 {
+            margin: 5px 0 0;
+            font-weight: 300;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .gallery figure {
+            margin: 0;
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .caption {
+            margin-top: 5px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #bdc3c7; /* Slightly lighter color for captions */
+            padding: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #34495e; /* Darker footer */
+            color: #ecf0f1;
+        }
+        /* Add a hover effect for the figures */
+        .gallery figure:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Trip to London</h1>
+        <h2>A Journey Through the Heart of the City</h2>
+    </header>
+    <div class="gallery">
+        <figure>
+            <img src="path/to/photo1.jpg" alt="Description of Photo 1">
+            <figcaption class="caption">A beautiful view of the London Eye.</figcaption>
+        </figure>
+        <figure>
+            <img src="path/to/photo2.jpg" alt="Description of Photo 2">
+            <figcaption class="caption">Strolling through Hyde Park.</figcaption>
+        </figure>
+        <figure>
+            <img src="path/to/photo3.jpg" alt="Description of Photo 3">
+            <figcaption class="caption">The iconic Big Ben at sunset.</figcaption>
+        </figure>
+        <figure>
+            <img src="path/to/photo4.jpg" alt="Description of Photo 4">
+            <figcaption class="caption">Exploring the streets of Covent Garden.</figcaption>
+        </figure>
+        <figure>
+            <img src="path/to/photo5.jpg" alt="Description of Photo 5">
+            <figcaption class="caption">A lovely afternoon at the Thames.</figcaption>
+        </figure>
+        <figure>
+            <img src="path/to/photo6.jpg" alt="Description of Photo 6">
+            <figcaption class="caption">The beautiful architecture of St. Paul's Cathedral.</figcaption>
+        </figure>
+        <figure>
+            <img src="path/to/photo7.jpg" alt="Description of Photo 7">
+            <figcaption class="caption">Shopping at Oxford Street.</figcaption>
+        </figure>
+        <figure>
+            <img src="path/to/photo8.jpg" alt="Description of Photo 8">
+            <figcaption class="caption">Enjoying the view from the Shard.</figcaption>
+        </figure>
+        <figure>
+            <img src="path/to/photo9.jpg" alt="Description of Photo 9">
+            <figcaption class="caption">A rainy day in the city.</figcaption>
+        </figure>
+        <figure>
+            <img src="path/to/photo10.jpg" alt="Description of Photo 10">
+            <figcaption class="caption">Walking across Tower Bridge.</figcaption>
+        </figure>
+        <figure>
+            <img src="path/to/photo11.jpg" alt="Description of Photo 11">
+            <figcaption class="caption">Visiting the British Museum.</figcaption>
+        </figure>
+        <figure>
+            <img src="path/to/photo12.jpg" alt="Description of Photo 12">
+            <figcaption class="caption">The vibrant streets of Camden Market.</figcaption>
+        </figure>
+        <figure>
+            <img src="path/to/photo13.jpg" alt="Description of Photo 13">
+            <figcaption class="caption">Relaxing by the Serpentine.</figcaption>
+        </figure>
+        <figure>
+            <img src="path/to/photo14.jpg" alt="Description of Photo 14">
+            <figcaption class="caption">The bustling atmosphere of Piccadilly Circus.</figcaption>
+        </figure>
+        <figure>
+            <img src="path/to/photo15.jpg" alt="Description of Photo 15">
+            <figcaption class="caption">The magical Harry Potter Studio Tour.</figcaption>
+        </figure>
+    </div>
+    <footer>
+        <p>© 2024 My Trip to London. All rights reserved.</p>
+    </footer>
+</body>
+</html>
