@@ -2,133 +2,94 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Themis Anthopoulos - Photography</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <title>Themis Anthopoulos Photography</title>
     <style>
-        body, html {
+        body {
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            font-family: 'Roboto', sans-serif;
-            color: #333;
-            background-color: #fff;
+            background-color: #1c1c1c;
+            color: #f0f0f0;
         }
+
         header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: #fff;
-            border-bottom: 1px solid #ddd;
-            z-index: 1000;
-        }
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 50px;
-        }
-        nav .logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 2em;
-            font-weight: 700;
-            text-transform: uppercase;
-        }
-        nav .menu a {
-            margin-left: 30px;
-            text-decoration: none;
-            color: #333;
-            font-size: 1.2em;
-        }
-        nav .menu a:hover {
-            color: #777;
-        }
-        .hero {
-            height: 100vh;
-            background-image: url('path/to/hero-image.jpg');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .hero h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 4.5em;
-            color: white;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: #111;
             padding: 20px;
-            border-radius: 5px;
-        }
-        .content-section {
             text-align: center;
-            padding: 100px 50px;
         }
-        .content-section h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 3em;
-            margin-bottom: 20px;
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            letter-spacing: 2px;
         }
-        .content-section p {
-            font-size: 1.2em;
-            max-width: 800px;
-            margin: 0 auto;
-            line-height: 1.6em;
-        }
-        footer {
-            text-align: center;
-            padding: 30px;
+
+        nav {
             background-color: #333;
-            color: white;
+            padding: 15px;
+            text-align: center;
         }
-        footer a {
-            color: white;
+
+        nav a {
+            margin: 0 15px;
+            color: #f0f0f0;
             text-decoration: none;
-            font-size: 1.1em;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .main-content {
+            text-align: center;
+            padding: 50px;
+        }
+
+        .main-content img {
+            max-width: 90%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #111;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            color: #f0f0f0;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <nav>
-        <div class="logo">Themis Anthopoulos</div>
-        <div class="menu">
-            <a href="#portfolio">Portfolio</a>
-            <a href="#blog">Blog</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-            <a href="#instagram">Instagram</a>
-        </div>
-    </nav>
+    <h1>Themis Anthopoulos Photography</h1>
 </header>
 
-<section class="hero">
-    <h1>Themis Anthopoulos</h1>
-</section>
+<nav>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#blog">Blog</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+</nav>
 
-<section class="content-section" id="portfolio">
-    <h2>Portfolio</h2>
-    <p>Explore my collection of photography that captures the essence of life, nature, and moments in time.</p>
-</section>
+<div class="main-content">
+    <h2>Welcome to My Photography Portfolio</h2>
+    <p>Explore my latest works and projects. Capturing moments, one frame at a time.</p>
 
-<section class="content-section" id="blog">
-    <h2>Blog</h2>
-    <p>Read my thoughts, experiences, and stories behind the photographs I capture around the world.</p>
-</section>
-
-<section class="content-section" id="about">
-    <h2>About</h2>
-    <p>I am Themis Anthopoulos, a passionate photographer who loves capturing moments that tell stories. My work reflects the beauty of everyday life and extraordinary experiences.</p>
-</section>
-
-<section class="content-section" id="contact">
-    <h2>Contact</h2>
-    <p>If you'd like to work with me or inquire about my photography, feel free to reach out through my contact page.</p>
-</section>
+    <!-- Main Picture -->
+    <img src="/images/main/DSC_2460.jpg" alt="Main photography image">
+</div>
 
 <footer>
-    <p>Follow me on <a href="https://www.instagram.com/themisanthopoulos" target="_blank">Instagram</a> | © 2024 Themis Anthopoulos</p>
+    <p>&copy; 2024 Themis Anthopoulos. All rights reserved.</p>
 </footer>
 
 </body>
