@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Trip to London - Photography</title>
+    <title>Themis Anthopoulos - Photography</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <style>
         body, html {
@@ -11,94 +11,80 @@
             padding: 0;
             font-family: 'Roboto', sans-serif;
             color: #333;
-            background-color: #f4f4f4;
+            background-color: #fff;
         }
         header {
             position: fixed;
             top: 0;
+            left: 0;
             width: 100%;
-            background-color: rgba(255, 255, 255, 0.9);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            z-index: 100;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+            z-index: 1000;
         }
-        header nav {
+        nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 50px;
+            padding: 20px 50px;
         }
-        header nav a {
+        nav .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2em;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        nav .menu a {
+            margin-left: 30px;
             text-decoration: none;
             color: #333;
-            font-size: 1.1em;
-            margin-left: 20px;
+            font-size: 1.2em;
         }
-        header nav a:hover {
-            color: #555;
+        nav .menu a:hover {
+            color: #777;
         }
         .hero {
             height: 100vh;
             background-image: url('path/to/hero-image.jpg');
             background-size: cover;
             background-position: center;
-            position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
-            color: white;
         }
         .hero h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 4em;
-            text-align: center;
+            font-size: 4.5em;
+            color: white;
             background-color: rgba(0, 0, 0, 0.5);
             padding: 20px;
-            border-radius: 10px;
+            border-radius: 5px;
         }
-        .gallery-section {
-            padding: 60px 50px;
+        .content-section {
             text-align: center;
+            padding: 100px 50px;
         }
-        .gallery-section h2 {
+        .content-section h2 {
             font-family: 'Playfair Display', serif;
-            font-size: 2.5em;
-            margin-bottom: 40px;
-        }
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        .gallery img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            transition: transform 0.3s;
-        }
-        .gallery img:hover {
-            transform: scale(1.05);
-        }
-        .about-section {
-            padding: 60px 50px;
-            background-color: #fff;
-            text-align: center;
-        }
-        .about-section h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5em;
+            font-size: 3em;
             margin-bottom: 20px;
         }
-        .about-section p {
+        .content-section p {
+            font-size: 1.2em;
             max-width: 800px;
             margin: 0 auto;
-            font-size: 1.2em;
             line-height: 1.6em;
         }
         footer {
             text-align: center;
-            padding: 20px;
+            padding: 30px;
             background-color: #333;
             color: white;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
         }
     </style>
 </head>
@@ -106,38 +92,43 @@
 
 <header>
     <nav>
-        <div><a href="#">Home</a></div>
-        <div>
+        <div class="logo">Themis Anthopoulos</div>
+        <div class="menu">
+            <a href="#portfolio">Portfolio</a>
+            <a href="#blog">Blog</a>
             <a href="#about">About</a>
-            <a href="#gallery">Gallery</a>
             <a href="#contact">Contact</a>
+            <a href="#instagram">Instagram</a>
         </div>
     </nav>
 </header>
 
 <section class="hero">
-    <h1>My Trip to London</h1>
+    <h1>Themis Anthopoulos</h1>
 </section>
 
-<section class="about-section" id="about">
-    <h2>About This Journey</h2>
-    <p>Exploring the bustling streets of London, capturing its historic landmarks, and indulging in its unique charm. This collection of photos showcases the beauty and energy of this incredible city.</p>
+<section class="content-section" id="portfolio">
+    <h2>Portfolio</h2>
+    <p>Explore my collection of photography that captures the essence of life, nature, and moments in time.</p>
 </section>
 
-<section class="gallery-section" id="gallery">
-    <h2>Photography Gallery</h2>
-    <div class="gallery">
-        <img src="path/to/photo1.jpg" alt="London photo 1">
-        <img src="path/to/photo2.jpg" alt="London photo 2">
-        <img src="path/to/photo3.jpg" alt="London photo 3">
-        <img src="path/to/photo4.jpg" alt="London photo 4">
-        <img src="path/to/photo5.jpg" alt="London photo 5">
-        <!-- Add more images as needed -->
-    </div>
+<section class="content-section" id="blog">
+    <h2>Blog</h2>
+    <p>Read my thoughts, experiences, and stories behind the photographs I capture around the world.</p>
+</section>
+
+<section class="content-section" id="about">
+    <h2>About</h2>
+    <p>I am Themis Anthopoulos, a passionate photographer who loves capturing moments that tell stories. My work reflects the beauty of everyday life and extraordinary experiences.</p>
+</section>
+
+<section class="content-section" id="contact">
+    <h2>Contact</h2>
+    <p>If you'd like to work with me or inquire about my photography, feel free to reach out through my contact page.</p>
 </section>
 
 <footer>
-    <p>© 2024 My Trip to London. All rights reserved.</p>
+    <p>Follow me on <a href="https://www.instagram.com/themisanthopoulos" target="_blank">Instagram</a> | © 2024 Themis Anthopoulos</p>
 </footer>
 
 </body>
